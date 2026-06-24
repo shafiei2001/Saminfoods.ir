@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بیرون‌بر غذای سامین | سفارش آنلاین</title>
+<meta name="description" content="بهترین بیرون‌بر تهران. چلوکباب، زرشک پلو، قورمه سبزی. سفارش: ۰۹۰۳۷۱۶۱۲۵۹">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ══════════════════════════════════════════
+   VARIABLES — Snappfood Pink Theme
+══════════════════════════════════════════ */
+:root {
+  --pink:        #F5385E;
+  --pink-light:  #FF6B85;
+  --pink-dark:   #D4244A;
+  --pink-pale:   #FFF0F3;
+  --pink-bg:     #FFF5F7;
+  --orange:      #FF6B35;
+  --white:       #FFFFFF;
+  --gray-50:     #FAFAFA;
+  --gray-100:    #F5F5F5;
+  --gray-200:    #EEEEEE;
+  --gray-300:    #E0E0E0;
+  --gray-500:    #9E9E9E;
+  --gray-700:    #616161;
+  --gray-900:    #212121;
+  --text:        #2D2D2D;
+  --text-light:  #757575;
+  --shadow-sm:   0 2px 8px rgba(245,56,94,0.12);
+  --shadow-md:   0 4px 20px rgba(245,56,94,0.18);
+  --shadow-lg:   0 8px 40px rgba(245,56,94,0.22);
+  --shadow-card: 0 2px 12px rgba(0,0,0,0.08);
+  --radius:      16px;
+  --radius-sm:   10px;
+  --radius-lg:   24px;
+  --radius-xl:   32px;
+  --font:        'Vazirmatn', Tahoma, Arial, sans-serif;
+  --tr:          all 0.25s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* ══════════════════════════════════════════ RESET */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font);direction:rtl;background:var(--white);color:var(--text);line-height:1.6;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+button{cursor:pointer;border:none;background:none;font-family:var(--font)}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:#f1f1f1}
+::-webkit-scrollbar-thumb{background:var(--pink);border-radius:3px}
+
+/* ══════════════════════════════════════════ UTILS */
+.container{max-width:1180px;margin:0 auto;padding:0 20px}
+.section-pad{padding:64px 0}
+.text-pink{color:var(--pink)}
+
+.section-header{text-align:center;margin-bottom:48px}
+.eyebrow{display:inline-flex;align-items:center;gap:6px;font-size:.8rem;font-weight:700;color:var(--pink);background:var(--pink-pale);border-radius:50px;padding:5px 16px;margin-bottom:12px}
+.section-header h2{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:800;color:var(--gray-900);margin-bottom:8px}
+.section-header p{color:var(--text-light);font-size:1rem;max-width:500px;margin:0 auto}
+.pink-line{width:48px;height:3px;background:linear-gradient(90deg,var(--pink),var(--pink-light));border-radius:2px;margin:14px auto 0}
+
+/* ══════════════════════════════════════════ BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:50px;font-family:var(--font);font-size:.95rem;font-weight:700;transition:var(--tr);cursor:pointer;border:2px solid transparent;white-space:nowrap}
+.btn-pink{background:var(--pink);color:#fff;box-shadow:var(--shadow-sm)}
+.btn-pink:hover{background:var(--pink-dark);transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.btn-outline{border-color:var(--pink);color:var(--pink);background:transparent}
+.btn-outline:hover{background:var(--pink-pale)}
+.btn-white{background:#fff;color:var(--pink);box-shadow:var(--shadow-card)}
+.btn-white:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.btn-sm{padding:9px 18px;font-size:.85rem}
+.btn-full{width:100%;justify-content:center}
+
+/* ══════════════════════════════════════════
+   HEADER
+══════════════════════════════════════════ */
+#header{position:fixed;top:0;left:0;right:0;z-index:1000;transition:var(--tr)}
+.header-inner{background:#fff;box-shadow:0 1px 0 var(--gray-200);transition:var(--tr)}
+#header.scrolled .header-inner{box-shadow:0 4px 20px rgba(0,0,0,0.1)}
+.header-wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.logo-icon{width:42px;height:42px;background:var(--pink);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;box-shadow:var(--shadow-sm);flex-shrink:0}
+.logo-text .name{font-size:1.05rem;font-weight:800;color:var(--gray-900)}
+.logo-text .tagline{font-size:.7rem;color:var(--text-light);margin-top:1px}
+.main-nav{display:flex;align-items:center;gap:2px}
+.main-nav a{padding:8px 14px;border-radius:8px;color:var(--gray-700);font-size:.88rem;font-weight:500;transition:var(--tr)}
+.main-nav a:hover{color:var(--pink);background:var(--pink-pale)}
+.header-right{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.header-phone{font-size:.9rem;font-weight:700;color:var(--gray-900);direction:ltr;display:flex;align-items:center;gap:6px}
+.header-phone span{color:var(--pink)}
+
+/* Burger */
+.burger{display:none;width:40px;height:40px;align-items:center;justify-content:center;flex-direction:column;gap:5px;border-radius:10px;border:1.5px solid var(--gray-200);background:#fff}
+.burger span{width:20px;height:2px;background:var(--gray-900);border-radius:1px;display:block;transition:var(--tr)}
+.burger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+
+/* Mobile Menu */
+.mob-menu{display:none;flex-direction:column;align-items:stretch;position:fixed;top:0;left:0;right:0;bottom:0;background:#fff;z-index:999;padding:80px 24px 24px;gap:6px}
+.mob-menu.open{display:flex}
+.mob-menu a{padding:14px 20px;border-radius:12px;font-size:1.1rem;font-weight:600;color:var(--gray-900);border:1.5px solid var(--gray-100);text-align:center;transition:var(--tr)}
+.mob-menu a:hover{background:var(--pink-pale);color:var(--pink);border-color:var(--pink)}
+.mob-menu .btn{margin-top:10px}
+
+/* ══════════════════════════════════════════
+   HERO SLIDER
+══════════════════════════════════════════ */
+#hero{position:relative;height:100vh;min-height:560px;overflow:hidden;margin-top:0}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity 1s ease;display:flex;align-items:center}
+.slide.active{opacity:1;z-index:1}
+.slide-bg{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.05);transition:transform 6s ease}
+.slide.active .slide-bg{transform:scale(1)}
+.slide-overlay{position:absolute;inset:0;background:linear-gradient(110deg,rgba(0,0,0,.75) 0%,rgba(0,0,0,.4) 60%,rgba(0,0,0,.1) 100%)}
+.slide-content{position:relative;z-index:1;max-width:620px;padding:0 20px}
+.slide-badge{display:inline-flex;align-items:center;gap:6px;background:var(--pink);color:#fff;font-size:.78rem;font-weight:700;padding:5px 14px;border-radius:50px;margin-bottom:16px}
+.slide-title{font-size:clamp(2rem,5vw,3.8rem);font-weight:900;color:#fff;line-height:1.15;margin-bottom:10px;text-shadow:0 2px 12px rgba(0,0,0,.3)}
+.slide-title em{color:var(--pink-light);font-style:normal;display:block}
+.slide-desc{font-size:1rem;color:rgba(255,255,255,.8);margin-bottom:8px}
+.slide-price{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.3);color:#fff;padding:6px 16px;border-radius:50px;font-size:.9rem;font-weight:600;margin-bottom:24px}
+.slide-actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-arrows{position:absolute;top:50%;transform:translateY(-50%);width:100%;display:flex;justify-content:space-between;padding:0 16px;z-index:2;pointer-events:none}
+.hero-arrow{pointer-events:all;width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.18);backdrop-filter:blur(8px);border:1.5px solid rgba(255,255,255,.3);color:#fff;font-size:1.1rem;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--tr)}
+.hero-arrow:hover{background:var(--pink);border-color:var(--pink)}
+.hero-dots{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:2;display:flex;gap:8px}
+.dot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.4);border:none;cursor:pointer;transition:var(--tr)}
+.dot.active{width:24px;border-radius:4px;background:var(--pink)}
+
+/* ══════════════════════════════════════════
+   CATEGORY PILLS
+══════════════════════════════════════════ */
+#categories{background:#fff;padding:0;position:sticky;top:66px;z-index:900;border-bottom:1px solid var(--gray-200);box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.cats-wrap{display:flex;gap:8px;overflow-x:auto;padding:12px 0;scrollbar-width:none}
+.cats-wrap::-webkit-scrollbar{display:none}
+.cat-pill{display:flex;align-items:center;gap:6px;padding:8px 18px;border-radius:50px;font-size:.88rem;font-weight:600;color:var(--gray-700);background:var(--gray-100);border:1.5px solid transparent;cursor:pointer;white-space:nowrap;transition:var(--tr);flex-shrink:0}
+.cat-pill:hover{background:var(--pink-pale);color:var(--pink)}
+.cat-pill.active{background:var(--pink);color:#fff;box-shadow:var(--shadow-sm)}
+
+/* ══════════════════════════════════════════
+   FOOD CARDS
+══════════════════════════════════════════ */
+#foods{background:var(--gray-50);padding:40px 0}
+.foods-panel{display:none}
+.foods-panel.active{display:block}
+.foods-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+
+.food-card{background:#fff;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);transition:var(--tr);border:1.5px solid transparent;position:relative}
+.food-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:var(--pink)}
+.food-card-img{position:relative;height:190px;overflow:hidden;background:var(--gray-100)}
+.food-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.food-card:hover .food-card-img img{transform:scale(1.06)}
+.food-badge{position:absolute;top:12px;right:12px;background:var(--pink);color:#fff;font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:50px}
+.food-badge.new{background:var(--orange)}
+.food-body{padding:16px}
+.food-name{font-size:1rem;font-weight:700;color:var(--gray-900);margin-bottom:5px}
+.food-desc{font-size:.82rem;color:var(--text-light);line-height:1.6;margin-bottom:12px}
+.food-foot{display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid var(--gray-100)}
+.food-price .amount{font-size:1.1rem;font-weight:800;color:var(--pink)}
+.food-price .unit{font-size:.72rem;color:var(--text-light)}
+.food-weight{font-size:.75rem;color:var(--text-light);background:var(--gray-100);padding:3px 10px;border-radius:20px}
+.food-btn{display:block;width:calc(100% - 32px);margin:0 16px 16px;padding:11px;border-radius:50px;background:var(--pink);color:#fff;font-family:var(--font);font-size:.88rem;font-weight:700;text-align:center;cursor:pointer;border:none;transition:var(--tr)}
+.food-btn:hover{background:var(--pink-dark)}
+
+/* ══════════════════════════════════════════
+   STATS
+══════════════════════════════════════════ */
+#stats{background:var(--pink);padding:56px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.stat-card{text-align:center;background:rgba(255,255,255,.15);border-radius:var(--radius-lg);padding:28px 16px;border:1.5px solid rgba(255,255,255,.25);transition:var(--tr)}
+.stat-card:hover{background:rgba(255,255,255,.22);transform:translateY(-4px)}
+.stat-icon{font-size:2.2rem;margin-bottom:10px}
+.stat-num{font-size:clamp(1.8rem,3vw,2.6rem);font-weight:900;color:#fff;line-height:1}
+.stat-label{font-size:.85rem;color:rgba(255,255,255,.85);margin-top:6px;font-weight:500}
+
+/* ══════════════════════════════════════════
+   REVIEWS
+══════════════════════════════════════════ */
+#reviews{background:var(--gray-50);overflow:hidden}
+.reviews-wrap{overflow:hidden;position:relative}
+.reviews-wrap::before,.reviews-wrap::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;pointer-events:none}
+.reviews-wrap::before{right:0;background:linear-gradient(to left,var(--gray-50),transparent)}
+.reviews-wrap::after{left:0;background:linear-gradient(to right,var(--gray-50),transparent)}
+.reviews-track{display:flex;gap:16px;animation:scroll 80s linear infinite;width:max-content}
+.reviews-track:hover{animation-play-state:paused}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.rev-card{min-width:280px;max-width:300px;background:#fff;border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);flex-shrink:0;border:1.5px solid var(--gray-100)}
+.rev-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.rev-avatar{width:42px;height:42px;border-radius:50%;background:var(--pink);display:flex;align-items:center;justify-content:center;font-size:1rem;font-weight:700;color:#fff;flex-shrink:0}
+.rev-name{font-size:.9rem;font-weight:700;color:var(--gray-900)}
+.rev-date{font-size:.75rem;color:var(--text-light)}
+.rev-stars{color:var(--pink);font-size:.85rem;margin-bottom:8px}
+.rev-text{font-size:.85rem;color:var(--gray-700);line-height:1.7}
+
+/* ══════════════════════════════════════════
+   WHY US
+══════════════════════════════════════════ */
+#why{background:#fff}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.why-card{padding:28px 20px;border-radius:var(--radius-lg);border:1.5px solid var(--gray-200);text-align:center;transition:var(--tr);cursor:default}
+.why-card:hover{border-color:var(--pink);box-shadow:var(--shadow-md);transform:translateY(-5px)}
+.why-card:hover .why-icon{transform:scale(1.15) rotate(8deg)}
+.why-icon{font-size:2.8rem;margin-bottom:14px;display:block;transition:transform .3s ease}
+.why-card h3{font-size:1rem;font-weight:700;color:var(--gray-900);margin-bottom:8px}
+.why-card p{font-size:.85rem;color:var(--text-light);line-height:1.7}
+
+/* ══════════════════════════════════════════
+   GALLERY
+══════════════════════════════════════════ */
+#gallery{background:var(--gray-50)}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:180px;gap:10px}
+.g-item{border-radius:var(--radius);overflow:hidden;cursor:pointer;position:relative}
+.g-item.big{grid-column:span 2;grid-row:span 2}
+.g-item img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.g-item:hover img{transform:scale(1.07)}
+.g-item::after{content:'🔍';position:absolute;inset:0;background:rgba(245,56,94,.35);display:flex;align-items:center;justify-content:center;font-size:1.8rem;opacity:0;transition:var(--tr)}
+.g-item:hover::after{opacity:1}
+
+/* ══════════════════════════════════════════
+   HYGIENE
+══════════════════════════════════════════ */
+#hygiene{background:#fff}
+.hygiene-wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.hygiene-list{display:flex;flex-direction:column;gap:16px}
+.hyg-item{display:flex;align-items:flex-start;gap:14px;padding:18px;border-radius:var(--radius);border:1.5px solid var(--gray-200);transition:var(--tr)}
+.hyg-item:hover{border-color:var(--pink);background:var(--pink-bg)}
+.hyg-icon{width:46px;height:46px;background:var(--pink-pale);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
+.hyg-item h4{font-size:.95rem;font-weight:700;color:var(--gray-900);margin-bottom:3px}
+.hyg-item p{font-size:.82rem;color:var(--text-light)}
+.hygiene-imgs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.hygiene-imgs img{border-radius:var(--radius);object-fit:cover;width:100%}
+.hygiene-imgs img:first-child{grid-column:span 2;height:200px}
+.hygiene-imgs img:not(:first-child){height:140px}
+
+/* ══════════════════════════════════════════
+   ABOUT
+══════════════════════════════════════════ */
+#about{background:var(--pink-bg)}
+.about-wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-text p{color:var(--gray-700);line-height:1.9;margin-bottom:14px;font-size:.95rem}
+.timeline{margin-top:28px;display:flex;flex-direction:column;gap:20px}
+.tl-item{display:flex;gap:14px}
+.tl-dot{width:36px;height:36px;border-radius:50%;background:var(--pink);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;color:#fff;flex-shrink:0}
+.tl-item h4{font-size:.92rem;font-weight:700;color:var(--gray-900)}
+.tl-item p{font-size:.82rem;color:var(--text-light)}
+.about-img{border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow-lg);position:relative}
+.about-img img{width:100%;height:380px;object-fit:cover}
+.about-badge{position:absolute;bottom:-14px;left:24px;background:var(--pink);color:#fff;padding:14px 22px;border-radius:var(--radius);text-align:center;box-shadow:var(--shadow-md)}
+.about-badge .num{font-size:2.2rem;font-weight:900;line-height:1}
+.about-badge .lbl{font-size:.75rem;opacity:.9}
+
+/* ══════════════════════════════════════════
+   FAQ
+══════════════════════════════════════════ */
+#faq{background:#fff}
+.faq-list{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
+.faq-item{border-radius:var(--radius);border:1.5px solid var(--gray-200);overflow:hidden;transition:border-color .3s}
+.faq-item.open{border-color:var(--pink)}
+.faq-q{width:100%;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:right;font-family:var(--font);font-size:.95rem;font-weight:600;color:var(--gray-900);background:none;cursor:pointer;transition:color .2s}
+.faq-q:hover{color:var(--pink)}
+.faq-arrow{width:28px;height:28px;border-radius:50%;background:var(--gray-100);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:transform .3s,background .3s;font-size:.8rem}
+.faq-item.open .faq-arrow{transform:rotate(180deg);background:var(--pink-pale);color:var(--pink)}
+.faq-body{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.faq-item.open .faq-body{max-height:200px}
+.faq-body-inner{padding:0 22px 18px;font-size:.9rem;color:var(--gray-700);line-height:1.8}
+
+/* ══════════════════════════════════════════
+   OFFER
+══════════════════════════════════════════ */
+#offer{background:var(--gray-50);padding:48px 0}
+.offer-box{background:linear-gradient(135deg,var(--pink) 0%,var(--orange) 100%);border-radius:var(--radius-xl);padding:52px 40px;text-align:center;position:relative;overflow:hidden}
+.offer-box::before{content:'🎁';position:absolute;top:-10px;right:30px;font-size:6rem;opacity:.1}
+.offer-box::after{content:'✨';position:absolute;bottom:-10px;left:30px;font-size:5rem;opacity:.1}
+.offer-tag{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.25);border:1px solid rgba(255,255,255,.4);color:#fff;font-size:.8rem;font-weight:700;padding:5px 16px;border-radius:50px;margin-bottom:16px;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,255,255,.3)}50%{box-shadow:0 0 0 10px rgba(255,255,255,0)}}
+.offer-box h2{font-size:clamp(1.4rem,3vw,2rem);color:#fff;font-weight:900;margin-bottom:10px}
+.offer-box p{color:rgba(255,255,255,.9);font-size:1rem;margin-bottom:8px}
+.offer-cond{display:inline-block;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.3);color:#fff;padding:8px 20px;border-radius:10px;font-size:.88rem;font-weight:600;margin:12px 0 24px}
+
+/* ══════════════════════════════════════════
+   FINAL CTA
+══════════════════════════════════════════ */
+#cta{position:relative;overflow:hidden;padding:100px 0;background:var(--gray-900)}
+.cta-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1544025162-d76694265947?w=1600&q=70') center/cover;opacity:.2}
+.cta-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(20,20,20,.95),rgba(40,0,10,.9))}
+.cta-content{position:relative;z-index:1;text-align:center}
+.cta-content h2{font-size:clamp(1.6rem,3.5vw,2.5rem);font-weight:900;color:#fff;margin-bottom:12px}
+.cta-content p{color:rgba(255,255,255,.7);font-size:1.05rem;margin-bottom:32px;max-width:440px;margin-left:auto;margin-right:auto}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+/* ══════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════ */
+#footer{background:var(--gray-900);border-top:1px solid rgba(255,255,255,.06)}
+.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;padding:52px 0 36px}
+.footer-logo-area .logo-icon{background:var(--pink)}
+.footer-logo-area p{color:rgba(255,255,255,.5);font-size:.85rem;line-height:1.8;margin:12px 0 18px}
+.socials{display:flex;gap:8px}
+.social{width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.5);font-size:1rem;transition:var(--tr)}
+.social:hover{background:var(--pink);border-color:var(--pink);color:#fff}
+.footer-col h4{font-size:.9rem;font-weight:700;color:#fff;margin-bottom:16px}
+.footer-links{display:flex;flex-direction:column;gap:10px}
+.footer-links a{color:rgba(255,255,255,.45);font-size:.85rem;transition:color .2s}
+.footer-links a:hover{color:var(--pink)}
+.f-contact{display:flex;align-items:flex-start;gap:8px;margin-bottom:10px;color:rgba(255,255,255,.45);font-size:.85rem}
+.f-contact .ico{color:var(--pink);flex-shrink:0}
+.f-contact a{color:#fff;font-weight:600;font-size:.92rem}
+.f-hours .row{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:.8rem;color:rgba(255,255,255,.4)}
+.f-hours .row:last-child{border:none}
+.f-hours .row span:first-child{color:rgba(255,255,255,.7)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.06);padding:18px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.footer-bottom p{color:rgba(255,255,255,.3);font-size:.8rem}
+.footer-bottom .pk{color:var(--pink)}
+
+/* ══════════════════════════════════════════
+   FLOAT BUTTON
+══════════════════════════════════════════ */
+#float{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:998;display:none}
+@media(max-width:768px){#float{display:block}}
+.float-btn{display:flex;align-items:center;gap:8px;background:var(--pink);color:#fff;font-family:var(--font);font-size:.95rem;font-weight:700;padding:14px 28px;border-radius:50px;border:none;box-shadow:0 6px 24px rgba(245,56,94,.5);cursor:pointer;animation:fb 2.5s ease infinite}
+@keyframes fb{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+
+/* ══════════════════════════════════════════
+   LIGHTBOX
+══════════════════════════════════════════ */
+#lb{display:none;position:fixed;inset:0;background:rgba(0,0,0,.94);z-index:3000;align-items:center;justify-content:center}
+#lb.open{display:flex}
+#lb img{max-width:90vw;max-height:88vh;border-radius:var(--radius);box-shadow:0 20px 60px rgba(0,0,0,.5)}
+#lb-close{position:absolute;top:18px;left:18px;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.12);border:none;color:#fff;font-size:1.3rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:var(--tr)}
+#lb-close:hover{background:var(--pink)}
+
+/* ══════════════════════════════════════════
+   ANIMATIONS
+══════════════════════════════════════════ */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.18s}.d3{transition-delay:.26s}.d4{transition-delay:.34s}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════ */
+@media(max-width:1024px){
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:28px}
+  .hygiene-wrap{grid-template-columns:1fr}
+  .about-wrap{grid-template-columns:1fr}
+  .about-img{display:none}
+  .gallery-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:768px){
+  .section-pad{padding:48px 0}
+  .main-nav,.header-phone{display:none}
+  .burger{display:flex}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .why-grid{grid-template-columns:1fr 1fr}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:140px}
+  .g-item.big{grid-column:span 2}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .hero-arrow{width:38px;height:38px;font-size:.9rem}
+  .hygiene-imgs img:first-child{height:170px}
+}
+@media(max-width:480px){
+  .slide-actions{flex-direction:column}
+  .slide-actions .btn{width:100%;justify-content:center}
+  .why-grid{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:repeat(2,1fr)}
+  .offer-box{padding:36px 20px}
+  .cta-btns{flex-direction:column;align-items:center}
+  .foods-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:360px){
+  .foods-grid{grid-template-columns:1fr}
+}
+</style>
+
+<!-- ═══════════════════════════════════════════════════════
+     PRICE CONFIG — فقط اینجا قیمت‌ها رو عوض کنید ✏️
+════════════════════════════════════════════════════════ -->
+<script>
+const PRICES = {
+  "k1":  "۱۲۵,۰۰۰",
+  "k2":  "۹۵,۰۰۰",
+  "k3":  "۱۴۵,۰۰۰",
+  "k4":  "۱۰۵,۰۰۰",
+  "k5":  "۸۵,۰۰۰",
+  "ir1": "۱۱۰,۰۰۰",
+  "ir2": "۱۲۰,۰۰۰",
+  "ir3": "۱۳۰,۰۰۰",
+  "ir4": "۱۳۵,۰۰۰",
+  "kh1": "۹۸,۰۰۰",
+  "kh2": "۱۱۵,۰۰۰",
+  "kh3": "۱۰۵,۰۰۰",
+  "p1":  "۱۸,۰۰۰",
+  "p2":  "۲۲,۰۰۰",
+  "p3":  "۱۵,۰۰۰",
+  "d1":  "۱۲,۰۰۰",
+  "d2":  "۱۰,۰۰۰",
+  "d3":  "۸,۰۰۰"
+};
+</script>
+
+</head>
+<body>
+
+<!-- ═══════════════════ HEADER ═══════════════════ -->
+<header id="header">
+  <div class="header-inner">
+    <div class="container">
+      <div class="header-wrap">
+        <a href="#" class="logo">
+          <div class="logo-icon">🍽️</div>
+          <div class="logo-text">
+            <div class="name">بیرون‌بر سامین</div>
+            <div class="tagline">غذای اصیل ایرانی از ۱۳۹۲</div>
+          </div>
+        </a>
+        <nav class="main-nav">
+          <a href="#foods">منو</a>
+          <a href="#reviews">نظرات</a>
+          <a href="#why">چرا سامین</a>
+          <a href="#gallery">گالری</a>
+          <a href="#about">درباره ما</a>
+          <a href="#faq">سوالات</a>
+        </nav>
+        <div class="header-right">
+          <div class="header-phone"><span>📞</span><a href="tel:09037161259">۰۹۰۳۷۱۶۱۲۵۹</a></div>
+          <a href="tel:09037161259" class="btn btn-pink btn-sm">ثبت سفارش</a>
+          <button class="burger" id="burger" aria-label="منو"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mob-menu" id="mob-menu">
+  <a href="#foods">🍽️ منوی کامل</a>
+  <a href="#reviews">⭐ نظرات مشتریان</a>
+  <a href="#why">💎 چرا سامین؟</a>
+  <a href="#gallery">📸 گالری</a>
+  <a href="#about">📖 درباره ما</a>
+  <a href="#faq">❓ سوالات</a>
+  <a href="tel:09037161259" class="btn btn-pink" style="margin-top:12px">📞 ثبت سفارش — ۰۹۰۳۷۱۶۱۲۵۹</a>
+</div>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section id="hero">
+  <!-- Slide 1 -->
+  <div class="slide active">
+    <div class="slide-bg" style="background-image:url('https://images.unsplash.com/photo-1544025162-d76694265947?w=1600&q=75')"></div>
+    <div class="slide-overlay"></div>
+    <div class="container">
+      <div class="slide-content">
+        <div class="slide-badge">🔥 پرفروش‌ترین</div>
+        <h1 class="slide-title">چلوکباب درباری<em>طعم اصیل، کیفیت ممتاز</em></h1>
+        <p class="slide-desc">ترکیب کباب برگ و کوبیده با برنج زعفرانی دودی</p>
+        <div class="slide-price">💰 از <span id="sp-k1"></span> تومان</div>
+        <div class="slide-actions">
+          <a href="tel:09037161259" class="btn btn-pink">📞 ثبت سفارش سریع</a>
+          <a href="#foods" class="btn btn-white">🍽️ مشاهده منو</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Slide 2 -->
+  <div class="slide">
+    <div class="slide-bg" style="background-image:url('https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=1600&q=75')"></div>
+    <div class="slide-overlay"></div>
+    <div class="container">
+      <div class="slide-content">
+        <div class="slide-badge">❤️ محبوب مشتریان</div>
+        <h1 class="slide-title">زرشک پلو با مرغ<em>دستور اصیل خانگی</em></h1>
+        <p class="slide-desc">مرغ طلایی برشته با برنج زرشک و زعفران درجه یک</p>
+        <div class="slide-price">💰 از <span id="sp-ir1"></span> تومان</div>
+        <div class="slide-actions">
+          <a href="tel:09037161259" class="btn btn-pink">📞 ثبت سفارش سریع</a>
+          <a href="#foods" class="btn btn-white">🍽️ مشاهده منو</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Slide 3 -->
+  <div class="slide">
+    <div class="slide-bg" style="background-image:url('https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=1600&q=75')"></div>
+    <div class="slide-overlay"></div>
+    <div class="container">
+      <div class="slide-content">
+        <div class="slide-badge">🆕 تازه و روزانه</div>
+        <h1 class="slide-title">چلوکباب کوبیده<em>گوشت تازه، پخت روزانه</em></h1>
+        <p class="slide-desc">کوبیده اصیل تهرانی با گوشت چرخ‌کرده تازه</p>
+        <div class="slide-price">💰 از <span id="sp-k2"></span> تومان</div>
+        <div class="slide-actions">
+          <a href="tel:09037161259" class="btn btn-pink">📞 ثبت سفارش سریع</a>
+          <a href="#foods" class="btn btn-white">🍽️ مشاهده منو</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-arrows">
+    <button class="hero-arrow" id="prev">❮</button>
+    <button class="hero-arrow" id="next">❯</button>
+  </div>
+  <div class="hero-dots" id="dots">
+    <button class="dot active" data-i="0"></button>
+    <button class="dot" data-i="1"></button>
+    <button class="dot" data-i="2"></button>
+  </div>
+</section>
+
+<!-- ═══════════════════ CATEGORY PILLS ═══════════════════ -->
+<nav id="categories">
+  <div class="container">
+    <div class="cats-wrap">
+      <button class="cat-pill active" data-cat="all">🍽️ همه</button>
+      <button class="cat-pill" data-cat="kabab">🔥 کباب‌ها</button>
+      <button class="cat-pill" data-cat="iranian">🍲 غذاهای ایرانی</button>
+      <button class="cat-pill" data-cat="khorak">🥘 خوراک‌ها</button>
+      <button class="cat-pill" data-cat="pish">🥗 پیش‌غذا</button>
+      <button class="cat-pill" data-cat="drinks">🥤 نوشیدنی‌ها</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════ FOODS ═══════════════════ -->
+<section id="foods">
+  <div class="container">
+
+    <!-- ALL / DEFAULT -->
+    <div class="foods-panel active" id="panel-all">
+      <div class="section-header reveal">
+        <span class="eyebrow">⭐ پرفروش‌ترین‌ها</span>
+        <h2>محبوب‌ترین غذاهای سامین</h2>
+        <div class="pink-line"></div>
+      </div>
+      <div class="foods-grid" id="grid-best"></div>
+    </div>
+
+    <!-- KABAB -->
+    <div class="foods-panel" id="panel-kabab">
+      <div class="section-header"><span class="eyebrow">🔥 کباب‌ها</span><h2>انواع کباب</h2><div class="pink-line"></div></div>
+      <div class="foods-grid" id="grid-kabab"></div>
+    </div>
+
+    <!-- IRANIAN -->
+    <div class="foods-panel" id="panel-iranian">
+      <div class="section-header"><span class="eyebrow">🍲 غذاهای ایرانی</span><h2>خورش‌های اصیل</h2><div class="pink-line"></div></div>
+      <div class="foods-grid" id="grid-iranian"></div>
+    </div>
+
+    <!-- KHORAK -->
+    <div class="foods-panel" id="panel-khorak">
+      <div class="section-header"><span class="eyebrow">🥘 خوراک‌ها</span><h2>خوراک‌های مخصوص</h2><div class="pink-line"></div></div>
+      <div class="foods-grid" id="grid-khorak"></div>
+    </div>
+
+    <!-- PISH -->
+    <div class="foods-panel" id="panel-pish">
+      <div class="section-header"><span class="eyebrow">🥗 پیش‌غذا</span><h2>پیش‌غذاها</h2><div class="pink-line"></div></div>
+      <div class="foods-grid" id="grid-pish"></div>
+    </div>
+
+    <!-- DRINKS -->
+    <div class="foods-panel" id="panel-drinks">
+      <div class="section-header"><span class="eyebrow">🥤 نوشیدنی‌ها</span><h2>نوشیدنی‌ها</h2><div class="pink-line"></div></div>
+      <div class="foods-grid" id="grid-drinks"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════ STATS ═══════════════════ -->
+<section id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card reveal d1"><div class="stat-icon">🚀</div><div class="stat-num" data-n="25000" data-s="+">۰</div><div class="stat-label">سفارش موفق</div></div>
+      <div class="stat-card reveal d2"><div class="stat-icon">❤️</div><div class="stat-num" data-n="8500" data-s="+">۰</div><div class="stat-label">مشتری وفادار</div></div>
+      <div class="stat-card reveal d3"><div class="stat-icon">🏆</div><div class="stat-num" data-n="12" data-s="+">۰</div><div class="stat-label">سال تجربه</div></div>
+      <div class="stat-card reveal d4"><div class="stat-icon">⭐</div><div class="stat-num" data-n="98" data-s="٪">۰</div><div class="stat-label">رضایت مشتریان</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ REVIEWS ═══════════════════ -->
+<section id="reviews" class="section-pad">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">💬 نظرات</span>
+      <h2>مشتریان درباره ما می‌گویند</h2>
+      <p>بیش از ۵۲ نظر واقعی از مشتریان راضی سامین</p>
+      <div class="pink-line"></div>
+    </div>
+  </div>
+  <div class="reviews-wrap">
+    <div class="reviews-track" id="rev-track"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════ WHY ═══════════════════ -->
+<section id="why" class="section-pad">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">💎 مزیت‌های ما</span>
+      <h2>چرا سامین را انتخاب کنیم؟</h2>
+      <div class="pink-line"></div>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal d1"><span class="why-icon">🥩</span><h3>مواد اولیه تازه</h3><p>هر روز صبح از بازار تهیه می‌شه. هیچ‌وقت از مواد فریز شده استفاده نمی‌کنیم.</p></div>
+      <div class="why-card reveal d2"><span class="why-icon">👨‍🍳</span><h3>آشپزان حرفه‌ای</h3><p>بیش از ۱۰ سال تجربه. هر غذا با عشق و مهارت آماده می‌شه.</p></div>
+      <div class="why-card reveal d3"><span class="why-icon">📦</span><h3>بسته‌بندی ممتاز</h3><p>استاندارد بهداشتی بالا. غذا در بهترین حالت به دستتون می‌رسه.</p></div>
+      <div class="why-card reveal d1"><span class="why-icon">⚡</span><h3>ارسال سریع</h3><p>تحویل به موقع. غذا همیشه داغ و تازه می‌آد.</p></div>
+      <div class="why-card reveal d2"><span class="why-icon">🍳</span><h3>پخت روزانه</h3><p>هر روز تازه پخته میشه. هیچ غذایی از روز قبل نمی‌مونه.</p></div>
+      <div class="why-card reveal d3"><span class="why-icon">📞</span><h3>پشتیبانی ۱۳ ساعته</h3><p>از ۱۱ صبح تا ۱۱ شب در خدمت شما هستیم.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ GALLERY ═══════════════════ -->
+<section id="gallery" class="section-pad" style="background:var(--gray-50)">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">📸 گالری</span>
+      <h2>غذا، آشپزخانه، کیفیت</h2>
+      <div class="pink-line"></div>
+    </div>
+    <div class="gallery-grid">
+      <div class="g-item big"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=70" alt="چلوکباب" loading="lazy"></div>
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&q=70" alt="زرشک پلو" loading="lazy"></div>
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1590301157890-4810ed352733?w=400&q=70" alt="قورمه سبزی" loading="lazy"></div>
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=400&q=70" alt="فسنجان" loading="lazy"></div>
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&q=70" alt="جوجه کباب" loading="lazy"></div>
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&q=70" alt="کباب" loading="lazy"></div>
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&q=70" alt="باقالی پلو" loading="lazy"></div>
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&q=70" alt="مواد تازه" loading="lazy"></div>
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1574484284002-952d92456975?w=400&q=70" alt="بسته‌بندی" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ HYGIENE ═══════════════════ -->
+<section id="hygiene" class="section-pad">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">🧼 بهداشت</span>
+      <h2>آشپزخانه‌ای که می‌توانید به آن اعتماد کنید</h2>
+      <div class="pink-line"></div>
+    </div>
+    <div class="hygiene-wrap">
+      <div class="hygiene-list reveal">
+        <div class="hyg-item"><div class="hyg-icon">🧽</div><div><h4>ضدعفونی روزانه</h4><p>آشپزخانه هر روز با استانداردهای کامل بهداشتی ضدعفونی می‌شه</p></div></div>
+        <div class="hyg-item"><div class="hyg-icon">🥗</div><div><h4>مواد اولیه تازه روزانه</h4><p>هر روز صبح سبزی و مواد تازه تهیه و آماده میشه</p></div></div>
+        <div class="hyg-item"><div class="hyg-icon">👔</div><div><h4>لباس بهداشتی کارکنان</h4><p>تمام کارکنان از لباس و دستکش بهداشتی استفاده می‌کنند</p></div></div>
+        <div class="hyg-item"><div class="hyg-icon">🏅</div><div><h4>تأییدیه بهداشت رسمی</h4><p>دارای مجوز بهداشت از سازمان غذا و دارو</p></div></div>
+      </div>
+      <div class="hygiene-imgs reveal">
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=70" alt="آشپزخانه" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&q=70" alt="مواد تازه" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&q=70" alt="بسته‌بندی" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ ABOUT ═══════════════════ -->
+<section id="about" class="section-pad">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">📖 داستان ما</span>
+      <h2>سامین از ۱۳۹۲ تا امروز</h2>
+      <div class="pink-line"></div>
+    </div>
+    <div class="about-wrap">
+      <div class="about-text reveal">
+        <p>بیرون‌بر غذای سامین در سال ۱۳۹۲ با یک رویا آغاز شد: ارائه غذای اصیل ایرانی با بهترین کیفیت، دقیقاً مثل پخت خانگی.</p>
+        <p>امروز با بیش از ۱۲ سال تجربه و رضایت بیش از ۸,۵۰۰ مشتری وفادار، مفتخریم که یکی از بهترین بیرون‌برهای تهران هستیم.</p>
+        <div class="timeline">
+          <div class="tl-item"><div class="tl-dot">۹۲</div><div><h4>تأسیس سامین</h4><p>شروع با چند آیتم اصلی و یک تیم کوچک پرانگیزه</p></div></div>
+          <div class="tl-item"><div class="tl-dot">۹۶</div><div><h4>گسترش منو</h4><p>اضافه شدن آشپزان متخصص و تنوع غذایی بیشتر</p></div></div>
+          <div class="tl-item"><div class="tl-dot">۱۴۰۰</div><div><h4>۵۰۰۰ مشتری وفادار</h4><p>رشد چشمگیر با تمرکز بر کیفیت ثابت</p></div></div>
+          <div class="tl-item"><div class="tl-dot">۱۴۰۳</div><div><h4>جایزه بهترین بیرون‌بر</h4><p>۸,۵۰۰+ مشتری راضی، رتبه ۴.۹ از ۵</p></div></div>
+        </div>
+      </div>
+      <div class="about-img reveal">
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=70" alt="آشپزخانه سامین" loading="lazy">
+        <div class="about-badge"><div class="num">۱۲+</div><div class="lbl">سال تجربه</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FAQ ═══════════════════ -->
+<section id="faq" class="section-pad" style="background:var(--gray-50)">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">❓ سوالات</span>
+      <h2>سوالات متداول</h2>
+      <div class="pink-line"></div>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item open">
+        <button class="faq-q">⏱️ زمان تحویل سفارش چقدره؟<span class="faq-arrow">▼</span></button>
+        <div class="faq-body"><div class="faq-body-inner">بسته به موقعیت مکانی شما، معمولاً بین ۳۰ تا ۶۰ دقیقه. در ساعت شلوغی ممکنه کمی بیشتر بشه.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">💳 چطور پرداخت کنم؟<span class="faq-arrow">▼</span></button>
+        <div class="faq-body"><div class="faq-body-inner">پرداخت نقدی در محل تحویل انجام میشه. کارت‌خوان سیار هم داریم. پرداخت آنلاین هم به زودی.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">📍 کجاها سرویس میدید؟<span class="faq-arrow">▼</span></button>
+        <div class="faq-body"><div class="faq-body-inner">در مناطق مرکزی، شمال و شرق تهران. برای آدرس دقیق تماس بگیرید تا بررسی کنیم.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">🛒 حداقل سفارش چقدره؟<span class="faq-arrow">▼</span></button>
+        <div class="faq-body"><div class="faq-body-inner">حداقل سفارش ۸۰,۰۰۰ تومانه. بالای ۲۵۰,۰۰۰ تومان ارسال رایگان + یه نوشیدنی هدیه!</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">🕐 ساعت کاری چیه؟<span class="faq-arrow">▼</span></button>
+        <div class="faq-body"><div class="faq-body-inner">شنبه تا چهارشنبه: ۱۱ صبح تا ۱۱ شب | پنج‌شنبه و جمعه: ۱۰ صبح تا ۱۲ شب</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ OFFER ═══════════════════ -->
+<section id="offer">
+  <div class="container">
+    <div class="offer-box reveal">
+      <div class="offer-tag">🔥 پیشنهاد محدود</div>
+      <h2>🎁 نوشیدنی رایگان هدیه بگیرید!</h2>
+      <p>با سفارش بالای ۲۵۰,۰۰۰ تومان یک دوغ محلی رایگان دریافت کنید</p>
+      <div class="offer-cond">سفارش بالای ۲۵۰,۰۰۰ تومان = دوغ محلی رایگان 🥛</div>
+      <a href="tel:09037161259" class="btn btn-white">📞 همین الان سفارش بده</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FINAL CTA ═══════════════════ -->
+<section id="cta">
+  <div class="cta-bg"></div>
+  <div class="cta-overlay"></div>
+  <div class="container">
+    <div class="cta-content reveal">
+      <h2>آماده سفارش یک غذای باکیفیت هستید؟</h2>
+      <p>یک تماس کافیه. غذای داغ و تازه درب منزلتون میاد!</p>
+      <div class="cta-btns">
+        <a href="tel:09037161259" class="btn btn-pink" style="font-size:1rem;padding:15px 32px">📞 ثبت سفارش — ۰۹۰۳۷۱۶۱۲۵۹</a>
+        <a href="#foods" class="btn btn-white">🍽️ مشاهده منو</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-logo-area">
+        <div class="logo" style="margin-bottom:14px">
+          <div class="logo-icon">🍽️</div>
+          <div class="logo-text"><div class="name" style="color:#fff">بیرون‌بر سامین</div><div class="tagline" style="color:rgba(255,255,255,.4)">از ۱۳۹۲</div></div>
+        </div>
+        <p>غذای اصیل ایرانی با بهترین کیفیت. هر روز تازه، هر روز خوشمزه.</p>
+        <div class="socials">
+          <a href="#" class="social">📷</a>
+          <a href="#" class="social">✈️</a>
+          <a href="#" class="social">💬</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col"><h4>دسترسی سریع</h4>
+          <div class="footer-links">
+            <a href="#foods">منوی کامل</a><a href="#why">چرا سامین</a>
+            <a href="#gallery">گالری</a><a href="#about">درباره ما</a><a href="#faq">سوالات</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col"><h4>تماس با ما</h4>
+          <div class="f-contact">📞&nbsp;<a href="tel:09037161259" style="color:var(--pink)">۰۹۰۳۷۱۶۱۲۵۹</a></div>
+          <div class="f-contact">📍&nbsp;<span>تهران، خیابان ولیعصر</span></div>
+          <div class="f-contact">📧&nbsp;<span>info@samin-food.ir</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col"><h4>ساعت کاری</h4>
+          <div class="f-hours">
+            <div class="row"><span>شنبه – چهارشنبه</span><span>۱۱ – ۲۳</span></div>
+            <div class="row"><span>پنج‌شنبه – جمعه</span><span>۱۰ – ۲۴</span></div>
+            <div class="row"><span>تعطیلات رسمی</span><span>۱۱ – ۲۲</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© ۱۴۰۳ <span class="pk">بیرون‌بر غذای سامین</span> — تمامی حقوق محفوظ است</p>
+      <p>ساخته شده با ❤️ برای مشتریان عزیز</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Float -->
+<div id="float"><a href="tel:09037161259" class="float-btn">📞 ثبت سفارش سریع</a></div>
+
+<!-- Lightbox -->
+<div id="lb"><button id="lb-close">✕</button><img id="lb-img" src="" alt=""></div>
+
+<!-- ═══════════════════════════════════════════════════════
+     JAVASCRIPT — All inline, no external files needed
+════════════════════════════════════════════════════════ -->
+<script>
+// ──── FOOD DATA ────
+const FOODS = [
+  // KABAB
+  {id:'k1',cat:'kabab',name:'چلوکباب درباری',desc:'ترکیب کباب برگ و کوبیده با برنج زعفرانی',img:'https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=70',w:'۴۵۰ گرم',best:true,badge:'پرفروش'},
+  {id:'k2',cat:'kabab',name:'چلوکباب کوبیده',desc:'کوبیده دست‌پخت با گوشت تازه روزانه',img:'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=600&q=70',w:'۳۵۰ گرم',best:true,badge:'پرفروش'},
+  {id:'k3',cat:'kabab',name:'چلوکباب برگ',desc:'فیله گوشت گوساله مرغوب با چاشنی مخصوص',img:'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=70',w:'۴۰۰ گرم',best:false},
+  {id:'k4',cat:'kabab',name:'جوجه کباب زعفرانی',desc:'جوجه مرینیت شده با زعفران و لیمو',img:'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=600&q=70',w:'۳۵۰ گرم',best:false},
+  {id:'k5',cat:'kabab',name:'کباب لقمه',desc:'کباب ریز با ادویه مخصوص سامین',img:'https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=600&q=70',w:'۳۰۰ گرم',best:false},
+  // IRANIAN
+  {id:'ir1',cat:'iranian',name:'زرشک پلو با مرغ',desc:'مرغ برشته با برنج زرشک زعفرانی اصیل',img:'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=70',w:'۵۰۰ گرم',best:true,badge:'محبوب'},
+  {id:'ir2',cat:'iranian',name:'قورمه سبزی',desc:'خورشت قورمه با گوشت گوساله و لوبیا',img:'https://images.unsplash.com/photo-1590301157890-4810ed352733?w=600&q=70',w:'۴۵۰ گرم',best:true,badge:'محبوب'},
+  {id:'ir3',cat:'iranian',name:'فسنجان',desc:'خورشت فسنجان با مرغ و گردوی واقعی',img:'https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=70',w:'۴۵۰ گرم',best:false},
+  {id:'ir4',cat:'iranian',name:'باقالی پلو با ماهیچه',desc:'برنج باقالی با ماهیچه ساعت‌ها پخته‌شده',img:'https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&q=70',w:'۵۵۰ گرم',best:false},
+  // KHORAK
+  {id:'kh1',cat:'khorak',name:'خوراک مرغ',desc:'مرغ با سس مخصوص و قارچ',img:'https://images.unsplash.com/photo-1574484284002-952d92456975?w=600&q=70',w:'۴۰۰ گرم',best:false},
+  {id:'kh2',cat:'khorak',name:'خوراک گوشت',desc:'گوشت گوساله با سبزیجات تازه',img:'https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=600&q=70',w:'۴۰۰ گرم',best:false},
+  {id:'kh3',cat:'khorak',name:'خوراک جوجه قارچ',desc:'جوجه با قارچ و فلفل رنگارنگ',img:'https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=600&q=70',w:'۳۸۰ گرم',best:true,badge:'محبوب'},
+  // PISH
+  {id:'p1',cat:'pish',name:'ماست موسیر',desc:'ماست تازه با موسیر خانگی',img:'https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=70',w:'۲۰۰ گرم',best:true,badge:'پرسفارش'},
+  {id:'p2',cat:'pish',name:'سالاد شیرازی',desc:'گوجه، خیار، پیاز با آب لیمو تازه',img:'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=70',w:'۲۵۰ گرم',best:false},
+  {id:'p3',cat:'pish',name:'نان سنگک',desc:'نان سنگک تازه از تنور',img:'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=70',w:'۳۰۰ گرم',best:false},
+  // DRINKS
+  {id:'d1',cat:'drinks',name:'دوغ محلی',desc:'دوغ تازه با نعناع خشک',img:'https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600&q=70',w:'۳۳۰ ml',best:true,badge:'پرطرفدار'},
+  {id:'d2',cat:'drinks',name:'نوشابه',desc:'نوشابه سرد گازدار',img:'https://images.unsplash.com/photo-1581636625402-29b2a704ef13?w=600&q=70',w:'۳۳۰ ml',best:false},
+  {id:'d3',cat:'drinks',name:'آب معدنی',desc:'آب معدنی خنک',img:'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600&q=70',w:'۵۰۰ ml',best:false},
+];
+
+const REVIEWS = [
+  {n:'علی محمدی',a:'ع',t:'چلوکباب درباری فوق‌العاده بود! گوشت تازه، برنج عالی. حتماً دوباره سفارش میدم.',d:'۱۴۰۳/۰۹/۱۵'},
+  {n:'مریم حسینی',a:'م',t:'زرشک پلو با مرغ واقعاً خوشمزه بود. مرغ کاملاً پخته و نرم. ممنون سامین!',d:'۱۴۰۳/۰۹/۱۲'},
+  {n:'رضا کریمی',a:'ر',t:'بهترین کباب کوبیده‌ای که تا حالا خوردم. گوشتش تازه و طعمش عالیه.',d:'۱۴۰۳/۰۹/۱۰'},
+  {n:'سارا احمدی',a:'س',t:'بسته‌بندی خیلی شیک و تمیز بود. غذا داغ و خوشمزه رسید.',d:'۱۴۰۳/۰۹/۰۸'},
+  {n:'امیر نوری',a:'ا',t:'قورمه سبزیشون واقعاً با دستور اصیل درست میشه. عاشق این غذام!',d:'۱۴۰۳/۰۹/۰۵'},
+  {n:'فاطمه رضایی',a:'ف',t:'سه ساله که مشتری سامین هستم. هیچ وقت ناامیدم نکردن.',d:'۱۴۰۳/۰۹/۰۲'},
+  {n:'محسن تهرانی',a:'م',t:'جوجه کباب زعفرانیشون یه چیز دیگه‌ست! آدرس رو به همه میدم.',d:'۱۴۰۳/۰۸/۲۸'},
+  {n:'نیلوفر صادقی',a:'ن',t:'خوراک جوجه قارچ عالی بود. بسته‌بندی تمیز و ارسال سریع.',d:'۱۴۰۳/۰۸/۲۵'},
+  {n:'کامران موسوی',a:'ک',t:'ماست موسیر خانگیشون خیلی خوبه. همیشه کنار غذا سفارش میدم.',d:'۱۴۰۳/۰۸/۲۲'},
+  {n:'زهرا علوی',a:'ز',t:'برنج زعفرانیشون خیلی خوش‌رنگ و خوشبوئه. غذا گرم و تازه رسید.',d:'۱۴۰۳/۰۸/۲۰'},
+  {n:'حسین قاسمی',a:'ح',t:'فسنجانشون با گردوی واقعی درست میشه. طعم اصیل داره.',d:'۱۴۰۳/۰۸/۱۸'},
+  {n:'شیرین مرادی',a:'ش',t:'بهترین سفارش آنلاین که داشتم. به موقع و با کیفیت.',d:'۱۴۰۳/۰۸/۱۵'},
+  {n:'داریوش فرهادی',a:'د',t:'باقالی پلو با ماهیچه‌شون فوق‌العاده‌ست. گوشت خیلی نرم شده.',d:'۱۴۰۳/۰۸/۱۲'},
+  {n:'بهرام نظری',a:'ب',t:'ده ساله که مشتری هستم. همیشه یه کیفیت ثابت و عالی.',d:'۱۴۰۳/۰۸/۰۲'},
+  {n:'ندا امینی',a:'ن',t:'کباب لقمه‌شون عالیه. اندازه و طعم مناسب. خیلی راضی بودم.',d:'۱۴۰۳/۰۷/۲۸'},
+  {n:'گلناز شریفی',a:'گ',t:'برای مهمانی سفارش دادم. همه مهمان‌ها تعریف کردن!',d:'۱۴۰۳/۰۷/۲۲'},
+  {n:'رویا حسن‌زاده',a:'ر',t:'چلوکباب درباری رو همیشه سفارش میدم. یه لذت واقعیه!',d:'۱۴۰۳/۰۷/۲۲'},
+  {n:'سیاوش بهرامی',a:'س',t:'بسته‌بندی شیک، غذای خوشمزه، ارسال سریع. سه تا مزیت!',d:'۱۴۰۳/۰۷/۱۵'},
+  {n:'فرهاد ابراهیمی',a:'ف',t:'جوجه کباب زعفرانیشون مثل رستوران‌های لاکچریه. آفرین!',d:'۱۴۰۳/۰۷/۱۰'},
+  {n:'ساناز توکلی',a:'س',t:'همه غذاهاشون دستور اصیل ایرانی دارن. حس خانه رو میده.',d:'۱۴۰۳/۰۵/۰۸'},
+];
+
+// ──── BUILD FOOD CARD ────
+function card(f) {
+  return `<div class="food-card">
+    <div class="food-card-img">
+      <img src="${f.img}" alt="${f.name}" loading="lazy">
+      ${f.badge?`<span class="food-badge">${f.badge}</span>`:''}
+    </div>
+    <div class="food-body">
+      <div class="food-name">${f.name}</div>
+      <div class="food-desc">${f.desc}</div>
+      <div class="food-foot">
+        <div class="food-price"><span class="amount">${PRICES[f.id]||'—'}</span> <span class="unit">تومان</span></div>
+        <span class="food-weight">⚖️ ${f.w}</span>
+      </div>
+    </div>
+    <a href="tel:09037161259" class="food-btn">📞 ثبت سفارش سریع</a>
+  </div>`;
+}
+
+// ──── RENDER FOODS ────
+document.getElementById('grid-best').innerHTML    = FOODS.filter(f=>f.best).map(card).join('');
+document.getElementById('grid-kabab').innerHTML   = FOODS.filter(f=>f.cat==='kabab').map(card).join('');
+document.getElementById('grid-iranian').innerHTML = FOODS.filter(f=>f.cat==='iranian').map(card).join('');
+document.getElementById('grid-khorak').innerHTML  = FOODS.filter(f=>f.cat==='khorak').map(card).join('');
+document.getElementById('grid-pish').innerHTML    = FOODS.filter(f=>f.cat==='pish').map(card).join('');
+document.getElementById('grid-drinks').innerHTML  = FOODS.filter(f=>f.cat==='drinks').map(card).join('');
+
+// ──── HERO PRICES ────
+['k1','ir1','k2'].forEach(id=>{
+  const el=document.getElementById('sp-'+id);
+  if(el)el.textContent=PRICES[id]||'';
+});
+
+// ──── CATEGORY TABS ────
+document.querySelectorAll('.cat-pill').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.cat-pill').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.foods-panel').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('panel-'+btn.dataset.cat).classList.add('active');
+    document.getElementById('foods').scrollIntoView({behavior:'smooth',block:'start'});
+  });
+});
+
+// ──── HERO SLIDER ────
+let cur=0,timer;
+const slides=document.querySelectorAll('.slide');
+const dots=document.querySelectorAll('.dot');
+function goTo(n){
+  slides[cur].classList.remove('active');
+  dots[cur].classList.remove('active');
+  cur=(n+slides.length)%slides.length;
+  slides[cur].classList.add('active');
+  dots[cur].classList.add('active');
+}
+function startAuto(){timer=setInterval(()=>goTo(cur+1),20000)}
+document.getElementById('prev').onclick=()=>{clearInterval(timer);goTo(cur-1);startAuto()};
+document.getElementById('next').onclick=()=>{clearInterval(timer);goTo(cur+1);startAuto()};
+dots.forEach(d=>d.addEventListener('click',()=>{clearInterval(timer);goTo(+d.dataset.i);startAuto()}));
+let tx=0;
+document.getElementById('hero').addEventListener('touchstart',e=>tx=e.changedTouches[0].clientX,{passive:true});
+document.getElementById('hero').addEventListener('touchend',e=>{
+  const dx=e.changedTouches[0].clientX-tx;
+  if(Math.abs(dx)>50){clearInterval(timer);goTo(dx>0?cur-1:cur+1);startAuto()}
+},{passive:true});
+startAuto();
+
+// ──── HEADER SCROLL ────
+window.addEventListener('scroll',()=>{
+  document.getElementById('header').classList.toggle('scrolled',window.scrollY>40);
+},{passive:true});
+
+// ──── MOBILE MENU ────
+const burger=document.getElementById('burger');
+const mobMenu=document.getElementById('mob-menu');
+burger.onclick=()=>{burger.classList.toggle('open');mobMenu.classList.toggle('open');document.body.style.overflow=mobMenu.classList.contains('open')?'hidden':''};
+mobMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{burger.classList.remove('open');mobMenu.classList.remove('open');document.body.style.overflow=''}));
+
+// ──── SMOOTH SCROLL ────
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-66,behavior:'smooth'})}
+  });
+});
+
+// ──── FAQ ────
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.onclick=()=>{
+    const item=q.closest('.faq-item');
+    const open=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+    if(!open)item.classList.add('open');
+  };
+});
+
+// ──── COUNTERS ────
+let counted=false;
+const statsEl=document.getElementById('stats');
+new IntersectionObserver(([e])=>{
+  if(e.isIntersecting&&!counted){
+    counted=true;
+    document.querySelectorAll('.stat-num').forEach(el=>{
+      const target=+el.dataset.n, suf=el.dataset.s||'';
+      const start=performance.now();
+      const tick=now=>{
+        const p=Math.min((now-start)/2000,1);
+        const ease=1-Math.pow(1-p,3);
+        el.textContent=Math.floor(target*ease).toLocaleString('fa-IR')+suf;
+        if(p<1)requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    });
+  }
+},{threshold:.3}).observe(statsEl);
+
+// ──── REVIEWS ────
+const revTrack=document.getElementById('rev-track');
+const revHtml=REVIEWS.map(r=>`
+  <div class="rev-card">
+    <div class="rev-head">
+      <div class="rev-avatar">${r.a}</div>
+      <div><div class="rev-name">${r.n}</div><div class="rev-date">${r.d}</div></div>
+    </div>
+    <div class="rev-stars">⭐⭐⭐⭐⭐</div>
+    <div class="rev-text">${r.t}</div>
+  </div>`).join('');
+revTrack.innerHTML=revHtml+revHtml;
+
+// ──── REVEAL ON SCROLL ────
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}}),{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// ──── LIGHTBOX ────
+document.querySelectorAll('.g-item').forEach(item=>{
+  item.onclick=()=>{
+    const img=item.querySelector('img');
+    document.getElementById('lb-img').src=img.src.replace('w=400','w=1200').replace('w=800','w=1600');
+    document.getElementById('lb').classList.add('open');
+    document.body.style.overflow='hidden';
+  };
+});
+document.getElementById('lb-close').onclick=closeLB;
+document.getElementById('lb').onclick=e=>{if(e.target.id==='lb')closeLB()};
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLB()});
+function closeLB(){document.getElementById('lb').classList.remove('open');document.body.style.overflow=''}
+</script>
+</body>
+</html>
