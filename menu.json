@@ -1,0 +1,201 @@
+{
+  "categories": [
+    {
+      "id": "kabab",
+      "name": "کباب‌ها",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": "k1",
+          "name": "چلوکباب درباری",
+          "description": "ترکیب کباب برگ و کوبیده با برنج زعفرانی",
+          "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80",
+          "weight": "۴۵۰ گرم",
+          "bestseller": true,
+          "priceKey": "k1"
+        },
+        {
+          "id": "k2",
+          "name": "چلوکباب کوبیده",
+          "description": "کوبیده دست‌پخت با گوشت تازه روزانه",
+          "image": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=600&q=80",
+          "weight": "۳۵۰ گرم",
+          "bestseller": true,
+          "priceKey": "k2"
+        },
+        {
+          "id": "k3",
+          "name": "چلوکباب برگ",
+          "description": "فیله گوشت گوساله مرغوب با چاشنی مخصوص",
+          "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80",
+          "weight": "۴۰۰ گرم",
+          "bestseller": false,
+          "priceKey": "k3"
+        },
+        {
+          "id": "k4",
+          "name": "جوجه کباب",
+          "description": "جوجه زعفرانی مرینیت شده با لیمو",
+          "image": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=600&q=80",
+          "weight": "۳۵۰ گرم",
+          "bestseller": false,
+          "priceKey": "k4"
+        },
+        {
+          "id": "k5",
+          "name": "کباب لقمه",
+          "description": "کباب ریز با ادویه مخصوص بیرون‌بر سامین",
+          "image": "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=600&q=80",
+          "weight": "۳۰۰ گرم",
+          "bestseller": false,
+          "priceKey": "k5"
+        }
+      ]
+    },
+    {
+      "id": "iranian",
+      "name": "غذاهای ایرانی",
+      "icon": "🍲",
+      "items": [
+        {
+          "id": "ir1",
+          "name": "زرشک پلو با مرغ",
+          "description": "مرغ برشته با برنج زرشک و زعفران اصیل",
+          "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=80",
+          "weight": "۵۰۰ گرم",
+          "bestseller": true,
+          "priceKey": "ir1"
+        },
+        {
+          "id": "ir2",
+          "name": "قورمه سبزی",
+          "description": "خورشت قورمه با گوشت گوساله و لوبیا",
+          "image": "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=600&q=80",
+          "weight": "۴۵۰ گرم",
+          "bestseller": true,
+          "priceKey": "ir2"
+        },
+        {
+          "id": "ir3",
+          "name": "فسنجان",
+          "description": "خورشت فسنجان با گوشت مرغ و گردو",
+          "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=80",
+          "weight": "۴۵۰ گرم",
+          "bestseller": false,
+          "priceKey": "ir3"
+        },
+        {
+          "id": "ir4",
+          "name": "باقالی پلو با ماهیچه",
+          "description": "برنج باقالی با ماهیچه ساعت‌ها پخته شده",
+          "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&q=80",
+          "weight": "۵۵۰ گرم",
+          "bestseller": false,
+          "priceKey": "ir4"
+        }
+      ]
+    },
+    {
+      "id": "khorak",
+      "name": "خوراک‌ها",
+      "icon": "🥘",
+      "items": [
+        {
+          "id": "kh1",
+          "name": "خوراک مرغ",
+          "description": "مرغ تکه شده با سس مخصوص و قارچ",
+          "image": "https://images.unsplash.com/photo-1574484284002-952d92456975?w=600&q=80",
+          "weight": "۴۰۰ گرم",
+          "bestseller": false,
+          "priceKey": "kh1"
+        },
+        {
+          "id": "kh2",
+          "name": "خوراک گوشت",
+          "description": "گوشت گوساله با سبزیجات تازه",
+          "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=600&q=80",
+          "weight": "۴۰۰ گرم",
+          "bestseller": false,
+          "priceKey": "kh2"
+        },
+        {
+          "id": "kh3",
+          "name": "خوراک جوجه قارچ",
+          "description": "جوجه با قارچ و فلفل رنگارنگ",
+          "image": "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=600&q=80",
+          "weight": "۳۸۰ گرم",
+          "bestseller": true,
+          "priceKey": "kh3"
+        }
+      ]
+    },
+    {
+      "id": "pishghaza",
+      "name": "پیش‌غذا",
+      "icon": "🥗",
+      "items": [
+        {
+          "id": "p1",
+          "name": "ماست موسیر",
+          "description": "ماست تازه با موسیر تهیه شده در آشپزخانه",
+          "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80",
+          "weight": "۲۰۰ گرم",
+          "bestseller": true,
+          "priceKey": "p1"
+        },
+        {
+          "id": "p2",
+          "name": "سالاد شیرازی",
+          "description": "گوجه، خیار، پیاز با آب لیمو تازه",
+          "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80",
+          "weight": "۲۵۰ گرم",
+          "bestseller": false,
+          "priceKey": "p2"
+        },
+        {
+          "id": "p3",
+          "name": "نان سنگک",
+          "description": "نان سنگک تازه از تنور",
+          "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80",
+          "weight": "۳۰۰ گرم",
+          "bestseller": false,
+          "priceKey": "p3"
+        }
+      ]
+    },
+    {
+      "id": "drinks",
+      "name": "نوشیدنی‌ها",
+      "icon": "🥤",
+      "items": [
+        {
+          "id": "d1",
+          "name": "دوغ محلی",
+          "description": "دوغ تازه با نعناع خشک",
+          "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600&q=80",
+          "weight": "۳۳۰ میلی‌لیتر",
+          "bestseller": true,
+          "priceKey": "d1"
+        },
+        {
+          "id": "d2",
+          "name": "نوشابه",
+          "description": "نوشابه سرد خانواده",
+          "image": "https://images.unsplash.com/photo-1581636625402-29b2a704ef13?w=600&q=80",
+          "weight": "۳۳۰ میلی‌لیتر",
+          "bestseller": false,
+          "priceKey": "d2"
+        },
+        {
+          "id": "d3",
+          "name": "آب معدنی",
+          "description": "آب معدنی خنک",
+          "image": "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600&q=80",
+          "weight": "۵۰۰ میلی‌لیتر",
+          "bestseller": false,
+          "priceKey": "d3"
+        }
+      ]
+    }
+  ]
+}
